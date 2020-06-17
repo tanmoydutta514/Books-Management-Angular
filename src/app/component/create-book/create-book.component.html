@@ -1,0 +1,55 @@
+<div class="my-container">
+  <br><br>
+  <div class="container">
+ <h3><p class="font-italic" align="center">Create Book</p></h3>
+ <form [formGroup]='userForm' (ngSubmit)='createBook()'>
+ <div class="needs-validation" novalidate>
+   <div class="form-row">
+     <div class="col-md-4 mb-3">
+       &nbsp;<label for="Id">Id</label>
+       <input type="text" class="form-control"  id="ID"  placeholder="Id" formControlName="ID" required >
+       <div class="valid-feedback">
+         Looks good!
+       </div>
+     </div>
+     <div class="col-md-4 mb-3">
+       <label for="Title">Title</label>
+       <input type="text" class="form-control" id="title"  placeholder="Title" formControlName="Title" required>
+       <div class="valid-feedback">
+         Looks good!
+       </div>
+     </div>
+     <div class="col-md-4 mb-3">
+       <label for="Description">Description</label>
+       <input type="text" class="form-control" id="description"  placeholder="Book description" formControlName="Description" required>
+       <div class="valid-feedback">
+         Looks good!
+       </div>
+     </div>
+     <div class="col-md-4 mb-3">
+       &nbsp;<label for="PageCount">PageCount</label>
+       <input type="text" class="form-control" id="pagecount"  placeholder="Book pagecount" formControlName="PageCount" required>
+       <div class="valid-feedback">
+         Looks good!
+       </div>
+     </div>
+     <div class="col-md-4 mb-3">
+       <label for="Excerpt">Excerpt</label>
+       <input type="text" class="form-control" id="excerpt"  placeholder="Excerpt" formControlName="Excerpt" required>
+       <div class="valid-feedback">
+         Looks good!
+       </div>
+     </div>
+     <div class="col-md-4 mb-3">
+       <label for="PublishDate">Publish Date</label>
+       <input type="text" class="form-control" id="publishdate"  placeholder="Book publishdate" formControlName="PublishDate" required>
+       <div class="valid-feedback">
+         Looks good!
+       </div>
+     </div>
+     <button class="btn btn-primary" type="submit" value="Submit">Submit</button> 
+     
+   </div>
+   </div>
+   
+  

@@ -1,0 +1,26 @@
+<div class="my-container">
+<br>
+<div class= "container">
+<h3><p class="font-italic" align="center">Register</p></h3>
+<form [formGroup]='userForm' (ngSubmit)='register()'>
+<div class="form-group">
+  <label for="fname">First Name:</label>
+  <input type="text" class="form-control" id="fname"  placeholder=" First Name" formControlName="fname" required>
+</div>
+<div class="form-group">
+  <label for="lname">Last Name:</label>
+  <input type="text" class="form-control" id="lname"  placeholder="Last Name" formControlName="lname" required>
+</div>
+<div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email"  placeholder="Email" formControlName="email" required>
+  </div>
+  <div class="form-group">
+    <label for="lname">Password:</label>
+    <input type="password" class="form-control" id="password"  placeholder="Password" formControlName="password" required>
+  </div>
+  <button class="btn btn-primary" type="submit" value="Submit">Submit</button>
+
+</form>
+</div>
+</div>

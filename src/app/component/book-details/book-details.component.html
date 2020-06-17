@@ -1,0 +1,23 @@
+
+  <div class="my-container">
+   <h3><p class="font-italic" align=center>All Book Details</p> </h3>
+<table>
+    <tr>
+  <td class="table-dark"><h6>Id</h6></td>
+  <td class="table-dark"><h6>Title</h6></td>
+  <td class="table-dark"><h6 align=center>Description</h6></td>
+  <td class="table-dark"><h6>PageCount</h6></td>
+  <td class="table-dark"><h6 align=center>Excerpt</h6></td>
+  <td class="table-dark"><h6 align=center>PublishDate</h6></td>
+  </tr>
+<tr *ngFor='let bk of book1'>
+   <td class="bg-primary">{{bk.ID}}</td>                      
+   <td class="table-info">{{bk.Title}}</td> 
+   <td class="bg-primary">{{bk.Description}}</td>
+   <td class="table-success">{{bk.PageCount}}</td>
+   <td class="bg-primary">{{bk.Excerpt}}</td>
+   <td class="table-success">{{bk.PublishDate}}</td>
+  </tr> 
+  </table>
+  
+</div>

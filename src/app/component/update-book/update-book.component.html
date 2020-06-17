@@ -1,0 +1,54 @@
+  
+ <div class="my-container">
+ <br><br>
+ <div class="container">
+<h3><p class="font-italic" align="center">Update Data</p></h3>
+<div class="needs-validation" novalidate >
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      &nbsp;<label for="Id">Id</label>
+      <input type="text" class="form-control"  [(ngModel)] = "ID" placeholder="Id" >
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="Title">Title</label>
+      <input type="text" class="form-control" [(ngModel)] = "Title" placeholder="Title" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="Description">Description</label>
+      <input type="text" class="form-control" [(ngModel)] = "Description" placeholder="Description" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      &nbsp;<label for="PageCount">PageCount</label>
+      <input type="text" class="form-control" [(ngModel)] = "PageCount" placeholder="PageCount" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="Excerpt">Excerpt</label>
+      <input type="text" class="form-control" [(ngModel)] = "Excerpt" placeholder="Excerpt" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="PublishDate">Publish Date</label>
+      <input type="text" class="form-control" [(ngModel)] = "PublishDate" placeholder="PublishDate" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    &nbsp;&nbsp;<button class="btn btn-primary" type="submit" (click) = "updateBook()">Submit</button>
+  </div>
+  </div>
+  </div>
+  

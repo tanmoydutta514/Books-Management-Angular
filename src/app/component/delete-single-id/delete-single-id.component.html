@@ -1,0 +1,19 @@
+<div class="my-container">   
+
+<div *ngFor="let bk of book1">
+    {{ bk.ID }} 
+    {{ bk.Title }}
+    {{ bk.Description }}
+    {{ bk.PageCount }} 
+    {{ bk.Excerpt }}
+    {{ bk.PublishDate }}
+     
+       </div> 
+       
+       <!-- <a [routerLink]="['/deletebook/ID', ID]">Delete</a>   -->
+       <button type="button" class="btn btn-primary btn-lg btn-block" (click)="delete()">Delete Book ID</button>
+
+      
+
+ <router-outlet></router-outlet> 
+</div>

@@ -1,0 +1,30 @@
+<!--  
+<div>
+<div *ngFor="let a of abc"> 
+    {{a.ID}} {{a.Title}} {{a.Description}} {{a.PageCount}} {{a.Excerpt}} {{a.PublishDate}} 
+    </div> 
+   <button (click)="deleteBook(a)">Delete</button>
+</div>
+-->
+        <!-- <div> 
+           <div *ngFor="let rs of rslt">
+            {{ rs.ID }} 
+            {{ rs.Title }}
+            {{ rs.Description }}
+            {{ rs.PageCount }} 
+            {{ rs.Excerpt }}
+             {{ rs.PublishDate }}
+           
+               </div> 
+               <button (click)="updateBook(rs.ID)">Update</button> 
+               <button (click)="delete(rs.ID)">Delete</button> 
+          <a [routerLink]="['/deletebook',rs.ID]" >Delete</a>    
+        </div>
+
+    -->
+    <!-- <ul *ngFor="let rs of rslt">  
+        
+        <a class="active" routerLink="./{{rs.ID}}">{{ rs.PageCount }}</a>
+          </ul> -->
+          
+          <router-outlet></router-outlet>

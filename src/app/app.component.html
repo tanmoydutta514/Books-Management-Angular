@@ -1,0 +1,25 @@
+<div class="topnav">
+  <a routerLink="home">Home</a>
+  <a routerLinkActive="active" routerLink="about">About</a>
+  <a routerLinkActive="active" *ngIf="!obj.loggedIn()" routerLink="login">Login</a>
+  <a routerLinkActive="active" style="cursor:pointer" *ngIf="obj.loggedIn()" (click)="obj.logoutUser()" [routerLink]="['/logout']">Logout</a>
+  <a routerLinkActive="active" routerLink="dashboard">Dashboard</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<router-outlet></router-outlet> 
+
+
+
+
+
+
+
+
+
+
+

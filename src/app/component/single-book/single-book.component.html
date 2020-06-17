@@ -1,0 +1,8 @@
+<div class="my-container">
+<div class="sidebar">
+    <ul *ngFor="let store of stores"> 
+        <a class="active" routerLink="./{{store.ID}}">{{ store.Title }}</a>
+    </ul>
+ </div>
+</div>
+<router-outlet></router-outlet> 
